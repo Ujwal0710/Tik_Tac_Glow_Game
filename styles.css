@@ -41,6 +41,19 @@ body{
 .footer{display:flex;align-items:center;justify-content:space-between;margin-top:12px}
 .status{color:var(--muted);font-weight:600}
 .credits{text-align:center;margin-top:18px;color:rgba(255,255,255,0.06);font-size:13px}
+
+/* Modal / start screen */
+.modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(2,6,23,0.6);z-index:60}
+.modal-inner{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:22px;border-radius:12px;max-width:520px;width:94%;box-shadow:0 10px 40px rgba(0,0,0,0.6)}
+.start-row{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}
+.muted{color:var(--muted)}
+.modal-actions{text-align:right}
+.small{font-size:12px}
+
+#onlinePanel textarea{background:rgba(255,255,255,0.02);color:inherit;border:1px solid rgba(255,255,255,0.04);padding:8px;border-radius:8px}
+#onlinePanel button{flex:1}
+#qr-wrap{display:flex;align-items:center;justify-content:center}
+
 @media (max-width:520px){
   .board{grid-template-columns:repeat(3, calc(26vw));grid-template-rows:repeat(3, calc(26vw));gap:8px}
   .cell{font-size:6vw}
