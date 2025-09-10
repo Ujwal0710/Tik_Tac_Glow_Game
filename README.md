@@ -57,3 +57,14 @@ If you have a suggestion that would make this better, please fork the repo and c
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contributors
+
+Thanks to the following person for their contributions to this project.
+
+[![Ujwal0710](https://github.com/Ujwal0710.png?size=100)](https://github.com/Ujwal0710)
+
+- **Ujwal0710** — Project owner and maintainer.  
+  GitHub: https://github.com/Ujwal0710
+
+Want to contribute? See the "Contributing" section above.
