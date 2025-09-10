@@ -8,7 +8,7 @@
 A single-page, responsive Tic-Tac-Toe game with a polished UI and an unbeatable AI opponent.
 
 <p align="center">
-  <img src="https://github.com/Ujwal0710/Tik_Tac_Glow_Game/blob/main/image.png?raw=true" alt="Game Screenshot" width="420" style="border-radius:12px;">
+  <img src="https://github.com/Ujwal0710/Tik_Tac_Glow_Game/blob/main/Screenshot%202025-09-10%20155016.png?raw=true" alt="Game Screenshot" width="420" style="border-radius:12px;">
 </p>
 
 ## Features
