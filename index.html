@@ -13,17 +13,70 @@
       <p class="sub">A modern, responsive Tic‑Tac‑Toe with perfect AI</p>
     </header>
 
+    <!-- Start modal: choose mode and AI options -->
+    <div id="startModal" class="modal" role="dialog" aria-modal="true" aria-label="Start options">
+      <div class="modal-inner">
+        <h2>Start Game</h2>
+        <p class="muted">Choose how you want to play</p>
+
+        <div class="start-row">
+          <label><input type="radio" name="startMode" value="pvp" checked> Two Players (local)</label>
+          <label><input type="radio" name="startMode" value="cpu"> Play vs Computer</label>
+          <label><input type="radio" name="startMode" value="online"> Play Online (manual signaling)</label>
+        </div>
+
+        <div id="cpuOptions" class="cpu-options">
+          <div class="start-row">
+            <label>Computer plays as:</label>
+            <label><input type="radio" name="cpuSide" value="O" checked> O (second)</label>
+            <label><input type="radio" name="cpuSide" value="X"> X (first)</label>
+            <label><input type="radio" name="cpuSide" value="auto"> Let computer choose</label>
+          </div>
+          <div class="start-row">
+            <label>Difficulty:</label>
+            <select id="cpuDifficulty">
+              <option value="unbeatable">Unbeatable (Minimax)</option>
+              <option value="smart">Smart (heuristic, w/ randomness)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Online controls -->
+        <div id="onlinePanel" style="display:none;" class="start-row">
+          <div style="width:100%">
+            <button id="createRoom" class="btn">Create Room (generate offer)</button>
+            <button id="joinRoom" class="btn ghost">Join Room (paste offer)</button>
+          </div>
+          <label class="small muted">Offer / Answer exchange (copy & paste):</label>
+          <textarea id="signalOut" rows="4" style="width:100%" placeholder="Offer / Answer will appear here"></textarea>
+          <textarea id="signalIn" rows="4" style="width:100%" placeholder="Paste remote offer/answer here"></textarea>
+          <div style="width:100%;display:flex;gap:8px">
+            <button id="createAnswer" class="btn ghost">Create Answer (when pasted offer)</button>
+            <button id="applyAnswer" class="btn">Apply Remote Answer</button>
+          </div>
+          <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;align-items:center">
+            <button id="copyOut" class="btn">Copy Offer/Answer</button>
+            <button id="copyIn" class="btn ghost">Copy Remote (from box below)</button>
+            <button id="genLink" class="btn">Generate Share Link</button>
+            <button id="showQR" class="btn">Show QR</button>
+          </div>
+          <input id="shareLink" placeholder="Share link will appear here" style="width:100%;margin-top:8px;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:rgba(255,255,255,0.02)"/>
+          <div id="qrWrap" style="margin-top:8px;display:none"><img id="qrImg" alt="QR code" style="max-width:220px;border-radius:8px;display:block"/></div>
+        </div>
+
+        <div class="modal-actions">
+          <button id="startBtn" class="btn">Start (local/cpu)</button>
+        </div>
+        <p class="small muted">Tip: For "Online" mode you can exchange the generated room text manually (no server required).</p>
+      </div>
+    </div>
+
     <section class="card">
       <div class="controls">
         <div class="mode">
-          <label>
-            <input type="radio" name="mode" value="pvp" checked>
-            2 Players
-          </label>
-          <label>
-            <input type="radio" name="mode" value="cpu">
-            vs Computer
-          </label>
+          <!-- kept for quick switching but primary flow is modal -->
+          <label><input type="radio" name="mode" value="pvp" checked> 2 Players</label>
+          <label><input type="radio" name="mode" value="cpu"> vs Computer</label>
         </div>
 
         <div class="scoreboard">
