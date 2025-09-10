@@ -7,7 +7,9 @@
 
 A single-page, responsive Tic-Tac-Toe game with a polished UI and an unbeatable AI opponent.
 
-![Game Screenshot](https://github.com/Ujwal0710/Tik_Tac_Glow_Game/blob/main/image.png?raw=true)
+<p align="center">
+  <img src="https://github.com/Ujwal0710/Tik_Tac_Glow_Game/blob/main/image.png?raw=true" alt="Game Screenshot" width="420" style="border-radius:12px;">
+</p>
 
 ## Features
 
@@ -60,11 +62,17 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contributors
 
-Thanks to the following person for their contributions to this project.
+Thanks to the following people for their contributions to this project.
 
-[![Ujwal0710](https://github.com/Ujwal0710.png?size=100)](https://github.com/Ujwal0710)
+<p align="left">
+  <a href="https://github.com/Ujwal0710"><img src="https://github.com/Ujwal0710.png?size=96" alt="Ujwal0710" style="border-radius:50%; width:72px; height:72px; margin:6px; border:2px solid #ddd"></a>
+  <a href="https://github.com/pranavisback"><img src="https://github.com/pranavisback.png?size=96" alt="pranavisback" style="border-radius:50%; width:72px; height:72px; margin:6px; border:2px solid #ddd"></a>
+</p>
 
 - **Ujwal0710** — Project owner and maintainer.  
   GitHub: https://github.com/Ujwal0710
+
+- **pranavisback** — Contributor.  
+  GitHub: https://github.com/pranavisback
 
 Want to contribute? See the "Contributing" section above.
